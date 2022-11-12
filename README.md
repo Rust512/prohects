@@ -1,2 +1,2 @@
-# prohects
+# projects
 Storing my Projects
