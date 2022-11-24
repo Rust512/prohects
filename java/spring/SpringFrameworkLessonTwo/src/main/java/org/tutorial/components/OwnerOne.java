@@ -1,19 +1,19 @@
 package org.tutorial.components;
 
 import org.springframework.stereotype.Component;
-import org.tutorial.beans.Cat;
 
 @Component
 public class OwnerOne {
-    private Cat cat;
+    private final CatOne cat;
 
-    public Cat getCat() {
+    public OwnerOne(CatOne cat) {
+        this.cat = cat;
+    }
+
+    public CatOne getCat() {
         return cat;
     }
 
-    public void setCat(Cat cat) {
-        this.cat = cat;
-    }
 
     @Override
     public String toString() {

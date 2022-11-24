@@ -1,11 +1,13 @@
 package org.tutorial.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.tutorial.beans.Cat;
 import org.tutorial.beans.Owner;
 
 @Configuration
+@ComponentScan(basePackages = {"org.tutorial.components"})
 public class ProjectConfig {
     /**
      * This bean creates a cat with name "Tom" by default
