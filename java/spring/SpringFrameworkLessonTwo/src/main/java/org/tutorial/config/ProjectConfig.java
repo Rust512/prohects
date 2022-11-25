@@ -41,7 +41,7 @@ public class ProjectConfig {
     /**
      * Wiring example:
      * @param cat wired with the owner
-     * @return returns an instance of Owner class
+     * @return instance of Owner class
      */
     @Bean(name = "wired")
     public Owner owner(Cat cat) {
