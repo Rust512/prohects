@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.tutorial.beans.Cat;
 import org.tutorial.beans.Owner;
 
-@Configuration
+@Configuration(enforceUniqueMethods = false)
 @ComponentScan(basePackages = {"org.tutorial.components"})
 public class ProjectConfig {
     /**
