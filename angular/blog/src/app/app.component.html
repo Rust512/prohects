@@ -1,1 +1,15 @@
-<h1>Hello Angular. {{title}}</h1>
+<h1>Hello Angular.</h1>
+<!--interpolation does not allow assignment in html-->
+<!--<h1>{{title = "different title"}}</h1>-->
+<!--interpolation does not allow the typeof operator in html-->
+<!--<h1>{{typeof title}}</h1>-->
+<!--increment and decrement operators do not work in interpolation-->
+<h1>{{title}}</h1>
+<!--using a component as a html tag-->
+<user-list></user-list>
+<!--using inline styles-->
+<app-inline-style></app-inline-style>
+<!--using inline template-->
+<app-inline-template></app-inline-template>
+<!--using inline template and style at the same time.-->
+<app-inline-template-and-component></app-inline-template-and-component>
